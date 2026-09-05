@@ -114,7 +114,7 @@ function FooterLink({
   return (
     <Link
       to={to}
-      hash={hash}
+      {...(hash ? { hash } : {})}
       className="text-sm text-muted-foreground transition-colors hover:text-foreground"
     >
       {children}

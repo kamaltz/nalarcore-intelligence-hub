@@ -25,6 +25,8 @@ export const siteConfig = {
   githubUrl: env["VITE_GITHUB_URL"] ?? "",
   /** Public base URL of the future NalarCore API / Agent Gateway. */
   apiBaseUrl: env["VITE_API_BASE_URL"] ?? "",
+  /** Canonical public origin of this site, e.g. "https://nalarcore.example". Empty = use relative URLs. */
+  siteUrl: env["VITE_SITE_URL"] ?? "",
 } as const;
 
 export const legalPlaceholders = {
