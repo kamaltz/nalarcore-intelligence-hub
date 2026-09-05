@@ -90,8 +90,7 @@ export function Navbar() {
           aria-label={open ? "Tutup menu" : "Buka menu"}
           onClick={() => setOpen((v) => !v)}
         >
-          {open ? <Menu className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
-          {open ? <X className="hidden" aria-hidden /> : null}
+          {open ? <X className="h-5 w-5" aria-hidden /> : <Menu className="h-5 w-5" aria-hidden />}
         </button>
       </nav>
 
